@@ -8,4 +8,5 @@ public class Car {
         this.colour = colour;
         this.vin = "ABC123";
     }
+
 }
