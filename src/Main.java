@@ -6,6 +6,7 @@ public class Main {
         System.out.println(bmw.manufacturer + " " + bmw.colour);
 
         Car fiat = new Car("Fiat", "red");
+        fiat.Manufacturer("Toyota");
         fiat.setManufacturer("Toyota");
 
         Vehicle bike = new Vehicle("Motorbike", "Yamaha", "black");
