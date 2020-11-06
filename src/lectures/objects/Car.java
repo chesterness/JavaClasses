@@ -1,7 +1,9 @@
+package lectures.objects;
+
 public class Car {
 
     static{ //we can have a static block of code
-        System.out.println("Hey, I'm static block in Car");//static block is executed when the class is loaded, class is loaded when it's used.
+        System.out.println("Hey, I'm static block in lectures.objects.Car");//static block is executed when the class is loaded, class is loaded when it's used.
         //java program when runs first
     }
 

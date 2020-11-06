@@ -1,32 +1,30 @@
+package lectures.objects;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        //static member_demo
+        //static_member demo
         System.out.println(Car.static_member);
 
         Car bmw = new Car("BMW", "blue");
         System.out.println(bmw.manufacturer + " " + bmw.colour);
         //reassignment
         System.out.println("bmw ref: " + bmw);
-        //bmw = new Car("bmw", "blue"); can't modify final object or primitive variable
+        //bmw = new lectures.objects.Car("bmw", "blue"); can't modify final object or primitive variable
         System.out.println("bmw ref: " + bmw);
 
         bmw.manufacturer = "Mercedes"; //can modify object even if variable is final
         System.out.println(bmw.manufacturer + " " + bmw.colour);
 
-        Car fiat = new Car("Fiat", "red");
-        fiat.manufacturer = "Toyota";
-
-        Vehicle bike = new Vehicle("Motorbike", "Yamaha", "black");
         //passing args
         int b = 3;
         modifyInt(b);
         System.out.println("b=" + b);
 
-        System.out.println("Car " + bmw.manufacturer);
+        System.out.println("lectures.objects.Car " + bmw.manufacturer);
         modifyCar(bmw);
-        System.out.println("Car " + bmw.manufacturer);
+        System.out.println("lectures.objects.Car " + bmw.manufacturer);
 
 
     }
