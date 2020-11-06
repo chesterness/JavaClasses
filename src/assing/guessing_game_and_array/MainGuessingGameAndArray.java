@@ -34,18 +34,18 @@ public class MainGuessingGameAndArray {
         //Task2:
         //Given an array of positive numbers and a positive number ‘k’, find
         //the maximum sum of any contiguous subarray of size ‘k’.
-        int[] positiveArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+        int[] positiveArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
         System.out.println("positiveArray length: " + positiveArray.length + "\npositiveArray values: " + Arrays.toString(positiveArray));
         int k = 4;
         Integer currentMax = 0;//variable wrapped in Integer object because otherwise it's not changed during the loop
 
         for(int firstIndex = 0; firstIndex <= positiveArray.length - k; firstIndex += k) {
             int secondIndex = firstIndex + k;
-//            System.out.println("firstIdex: " + firstIndex + " secondIndex: " + secondIndex);
+            System.out.println("firstIdex: " + firstIndex + " secondIndex: " + secondIndex);
             int[] subArray = Arrays.copyOfRange(positiveArray, firstIndex, secondIndex);
-//            System.out.println("subArray: " + Arrays.toString(subArray));
+            System.out.println("subArray: " + Arrays.toString(subArray));
             int sumOfSubarray = IntStream.of(subArray).sum();
-//            System.out.println("sumOfSubarray: " + sumOfSubarray);
+            System.out.println("sumOfSubarray: " + sumOfSubarray);
             if (sumOfSubarray>currentMax){
                 currentMax = sumOfSubarray;
             }
