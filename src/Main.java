@@ -5,7 +5,7 @@ public class Main {
         //static member_demo
         System.out.println(Car.static_member);
 
-        final Car bmw = new Car("BMW", "blue");
+        Car bmw = new Car("BMW", "blue");
         System.out.println(bmw.manufacturer + " " + bmw.colour);
         //reassignment
         System.out.println("bmw ref: " + bmw);
