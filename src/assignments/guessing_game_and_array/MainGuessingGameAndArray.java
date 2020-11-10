@@ -1,4 +1,4 @@
-package assing.guessing_game_and_array;
+package assignments.guessing_game_and_array;
 
 import java.util.Arrays;
 import java.util.Scanner;

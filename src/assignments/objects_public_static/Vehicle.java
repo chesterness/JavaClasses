@@ -1,4 +1,4 @@
-package assing.objects_public_static;
+package assignments.objects_public_static;
 
 public class Vehicle {
     public String type;
