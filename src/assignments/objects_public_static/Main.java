@@ -8,7 +8,7 @@ public class Main {
         fiat.manufacturer = "Toyota";
 
         Vehicle bike = new Vehicle("Motorbike", "Yamaha", "black");
-        System.out.println(bike.toString());
+        System.out.println(bike);
 
     }
 }
